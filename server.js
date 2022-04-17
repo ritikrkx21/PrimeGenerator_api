@@ -32,7 +32,7 @@ let strategy = 0; // strategy/algorithm chosen by user to find primes
 let timestamp = new Date().getTime(); // getting current time
 let timestamptext = timestamp.toString(); // in string format
 
-app.post( '/m' , ( req, res ) => {
+app.post( '/prime' , ( req, res ) => {
  const first_num = req.body.firstNum; //storing input for starting number of given range
  const second_num = req.body.secondNum; //storing input for ending number of given range
  strategy = req.body.strategy; // storing strategy given by user
